@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import style from "./moviesCard.module.css";
+import placeHolder from '../placeholder.png'
 
 export function MoviesCard({ movie }) {
-    const imgUrl = `https://image.tmdb.org/t/p/w300${movie.poster_path}`;
+    const imgUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w300${movie.poster_path}` : placeHolder;
 
     return (
         <li className={style.moviesCard}>

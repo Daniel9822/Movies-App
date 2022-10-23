@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getApi } from '../utils/httpClient';
 import Spinner from '../components/Spinner';
+import placeholder from '../placeholder.png'
 
 export function Detail(){
     const {movieId} = useParams()
@@ -11,7 +12,7 @@ export function Detail(){
     
     useEffect(()=>{
         setIsLoading(true)
-        getApi(`/movie/${movieId}&language=es-ES`).then(data =>{
+        getApi(`/movie/${movieId}`).then(data =>{
             setMovies(data)
             setIsLoading(false)
         })
@@ -23,7 +24,7 @@ export function Detail(){
     
     if(!movie) return null
     
-    const imgUrl = `https://image.tmdb.org/t/p/w500${movie.poster_path}`;
+    const imgUrl = movie.poster_path ? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : placeholder;
     return (
         <div className={styles.detailsContainer}>
             <img className={styles.col} src={imgUrl} alt="img" />

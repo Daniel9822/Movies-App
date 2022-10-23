@@ -11,7 +11,7 @@
 .imgCard{
     border-radius: 15px;
     background-color: azure;
-    box-shadow: 2px 2px 15px black;
+    box-shadow: 2px 2px 15px white;
     transition: all .3s;
     width: 230px;
     height: 345px;
