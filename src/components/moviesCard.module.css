@@ -1,0 +1,52 @@
+.moviesCard{
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    text-shadow: 1px 4px 10px blue, 2px 3px 5px black;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.imgCard{
+    border-radius: 15px;
+    background-color: azure;
+    box-shadow: 2px 2px 15px black;
+    transition: all .3s;
+    width: 230px;
+    height: 345px;
+}
+
+.imgCard:hover{
+    opacity: 0.5;
+}
+
+
+
+.main{
+    padding-top: 20px;
+}
+
+.header{
+    text-align: center;
+    padding: 10px 0 10px;
+    font-size: 1rem;
+    width: 15rem;
+    margin: 0 auto;
+}
+
+.text{
+    width: auto;
+    font-size: 3rem;
+    text-shadow: 1px 4px 10px blue, 5px 3px 2px black;
+    color: white;
+    margin: 0;
+}
+
+
+@media(max-width: 500px){
+    .imgCard{
+        width: 80%;
+        height: auto;
+    }
+}

@@ -1,0 +1,21 @@
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.notFound{
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 1px 4px 10px blue, 2px 3px 5px black;
+    color: white;
+    padding: 60px;
+}
+
+@media(max-width: 500px){
+    .content{
+        grid-template-columns: 100%
+    }
+}

@@ -1,0 +1,18 @@
+.spinner{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.spinning{
+    animation: move 1s linear infinite;
+    color: rgba(0, 0, 255, 0.718);
+    
+   
+}
+
+@keyframes move {
+    to {
+        transform: rotate(360deg);
+    }
+}

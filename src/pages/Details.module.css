@@ -1,0 +1,18 @@
+.detailsContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.col{
+    max-width: 400px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+}
+
+.title{
+    margin-top: 0;
+}

@@ -1,0 +1,25 @@
+.form{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.container{
+    position: relative;
+}
+
+.button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+    height: 100%;
+}
+
+.input{
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding:  0 20px;
+}
