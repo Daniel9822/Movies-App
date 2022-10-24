@@ -1,7 +1,7 @@
 .form{
     display: flex;
     justify-content: center;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 .container{
     position: relative;
@@ -22,4 +22,12 @@
     border-radius: 15px;
     border: none;
     padding:  0 20px;
+    font-size: 1.5em;
+}
+
+input:focus{
+    border: none;
+    outline-color: blue;
+    /* text-shadow: 1px 2px 15px blue, 4px 2px 15px black; */
+
 }

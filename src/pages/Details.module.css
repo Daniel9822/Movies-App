@@ -1,9 +1,14 @@
 .detailsContainer{
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
     flex-wrap: wrap;
     padding-bottom: 20px;
+   
+}
+
+.detailsContainer img{
+    box-shadow: 0px 0px 15px white;
 }
 
 .col{
@@ -11,7 +16,9 @@
     border-radius: 15px;
     font-size: 20px;
     color: white;
+   
 }
+
 
 .title{
     margin-top: 0;
