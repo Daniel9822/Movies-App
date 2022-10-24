@@ -19,7 +19,7 @@ export function MoviesGrid() {
     const [isLoading, setIsLoading] = useState();
     const [page, setPage] = useState(1)
     const [hasMore, setHasmore] = useState(true);
-    console.log(page)
+    
 
     useEffect(() => {
         setIsLoading(true);

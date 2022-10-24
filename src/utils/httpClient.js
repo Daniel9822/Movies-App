@@ -1,10 +1,11 @@
-import { token } from "../components/token";
-const API = "https://api.themoviedb.org/3";
+
+const API = process.env.REACT_APP_API;
+const TOKEN = process.env.REACT_APP_API_TOKEN;
 
 export function getApi(path) {
    return fetch(`${API}${path}`, {
         headers: {
-            Authorization: `Bearer ${token}`,
+            Authorization: `Bearer ${TOKEN}`,
             "Content-Type": "application/json;charset=utf-8",
         },
     }).then((response) => response.json());
